@@ -22,7 +22,7 @@ export function isAuthenticated(
             token,
             process.env.JWT_SECRET
         )as PayLoad
-            console.log(sub)
+            return next()
     }
     catch(err){
         return res.status(401).end()
