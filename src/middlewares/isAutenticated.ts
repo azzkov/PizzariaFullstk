@@ -23,6 +23,7 @@ export function isAuthenticated(
             process.env.JWT_SECRET
         )as PayLoad
             return next()
+            console.log("Loggin Successfully")
     }
     catch(err){
         return res.status(401).end()
