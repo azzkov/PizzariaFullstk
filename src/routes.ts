@@ -9,5 +9,6 @@ router.post('/users', new CreateUserController().handle)
 
 //Route Autentication
 router.post('/logger', new AuthUserController().handle)
+//Route Detail User
 router.get('/info', isAuthenticated, new DetailUserController().handle)
 export{ router }
